@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  .row {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+
+    .col {
+      button {
+        color: #ffffff;
+        padding: 2rem;
+        font-size: 2rem;
+        border: none;
+        cursor: pointer;
+      }
+      &:nth-child(1) button {
+        background-color: gray;
+      }
+      &:nth-child(2) button {
+        background-color: #f1f1f1;
+        color: darkslategrey;
+      }
+      &:nth-child(3) button {
+        background-color: lightseagreen;
+      }
+    }
+  }
+}
